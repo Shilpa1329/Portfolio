@@ -1,0 +1,56 @@
+[
+  {
+    "title": "RealChat App",
+    "imageSrc": "projects/chat.png",
+    "description": " A real-time chat application built with the MERN stack. Users can sign up or log in, view a list of contacts, and identify online users via a green dot. Start seamless conversations by clicking on a contact's name.",
+    "skills": ["React", "Tailwind CSS","Express", "Node","MongoDB"],
+    "demo": "https://mern-chat-app-xmda.onrender.com/login",
+    "source": "https://github.com/Shilpa1329/MERN-Chat-App",
+    "type": "mern"
+  },
+  {
+    "title": "Github Insights",
+    "imageSrc": "projects/git.png",
+    "description": "An intuitive application where users can log in or sign up using their GitHub account. The interface displays your GitHub profile on the left and a timeline of your repositories on the right. Toggle between your most liked, most starred, or most forked repositories with ease using the buttons at the top.",
+    "skills": ["React","Tailwind CSS", "Express", "Node", "Github API","MongoDB"],
+    "demo": "https://mern-github-app-qwwr.onrender.com/login",
+    "source": "https://github.com/Shilpa1329/MERN-Github",
+    "type": "mern"
+  },
+  {
+    "title": "Twitter Clone",
+    "imageSrc": "projects/x.png",
+    "description": "A dynamic Twitter clone built with the MERN stack. Features include account creation, login/signup, posting, deleting, liking, following, and profile updates for a seamless social media experience.",
+    "skills": ["React", "Tailwind CSS","DaisyUI", "Express", "Node","MongoDB"],
+    "demo": "https://mern-x-1si2.onrender.com/login",
+    "source": "https://github.com/Shilpa1329/MERN-X",
+    "type": "mern"
+  },
+  {
+    "title": "Coffee-Cafe - Modern Landing Page",
+    "imageSrc": "projects/coffee.png",
+    "description": "A dynamic and visually engaging landing page for Coffee Cafe, built with React and styled using Tailwind CSS. It features smooth animations and a modern design to create an inviting online experience for coffee lovers.",
+    "skills": ["React", "Tailwind CSS"],
+    "demo": "https://brew-coffee-cafe.netlify.app",
+    "source": "https://github.com/Shilpa1329/Coffee-Cafe/",
+    "type": "frontend"
+  },
+  {
+    "title": "Xora - SaaS Landing Page",
+    "imageSrc": "projects/xora.png",
+    "description": "Xora is a sleek and professional SaaS landing page, designed in Figma and developed with React and Tailwind CSS. It showcases a modern, user-friendly interface with a focus on conversion and engagement, offering a seamless experience for potential clients.",
+    "skills": ["React", "Tailwind CSS"],
+    "demo": "https://shilpa1329.github.io/Xora/",
+    "source": "https://github.com/Shilpa1329/Xora",
+    "type": "frontend"
+  },
+  {
+    "title": "Virtualr - Developer Tools Landing Page",
+    "imageSrc": "projects/virtual.png",
+    "description": "Virtualr is a cutting-edge landing page designed to highlight a suite of innovative solutions for developers. With a clean, modern aesthetic, it provides an engaging experience that invites users to explore what’s next in development tools, all while maintaining a focus on simplicity and ease of use.",
+    "skills": ["React", "Tailwind CSS"],
+    "demo": "https://virtual-r-black-iota.vercel.app/",
+    "source": "https://github.com/Shilpa1329/VirtualR",
+    "type": "frontend"
+  }
+]

@@ -1,0 +1,155 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  background-color: rgba(12, 12, 12, 0.6);
+  border-radius: 15px;
+  padding: 73px;
+  margin-top: 129px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  color: var(--color-primary);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.aboutImage {
+  width: 35%;
+}
+
+.aboutItems {
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.aboutItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+  padding: 25px;
+  background-image: linear-gradient(135deg, #11998e, #38ef7d);
+
+  
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+}
+
+.aboutItem:hover {
+  background-size: 100% 100%;
+}
+
+.aboutItem h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.aboutItemText h3 {
+  margin-bottom: 1rem; /* Adds space below the heading */
+}
+
+.aboutItem p {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .aboutImage {
+    display: none;
+  }
+
+  .aboutItems {
+    margin-top: 29px;
+  }
+
+  .aboutItem {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 20px 0;
+}
+
+.timelineItem {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timelineItem::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--color-secondary);
+}
+
+.timelineIcon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-right: 20px;
+}
+
+.timelineIcon img {
+  width: 20px;
+}
+
+.timelineContent {
+  background-color: var(--color-background-alt);
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timelineContent h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: var(--color-text); /* Ensure heading is visible */
+}
+
+.timelineContent p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--color-text); /* Update to a more visible color */
+}

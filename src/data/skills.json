@@ -1,0 +1,69 @@
+{
+  "frontend": [
+    {
+      "title": "HTML",
+      "imageSrc": "skills/html.png",
+      "class": "html"
+    },
+    {
+      "title": "CSS",
+      "imageSrc": "skills/css.png",
+      "class": "css"
+    },
+    {
+      "title": "JavaScript",
+      "imageSrc": "skills/javascript.png",
+      "class": "js"
+    },
+    {
+      "title": "React",
+      "imageSrc": "skills/react.png",
+      "class": "react"
+    },
+    {
+      "title": "Tailwind CSS",
+      "imageSrc": "skills/tailwind.png",
+      "class": "tailwind"
+    }
+  
+  ],
+  "backend": [
+    {
+      "title": "Node.js",
+      "imageSrc": "skills/node.png",
+      "class": "nodejs"
+    },
+    {
+      "title": "Express",
+      "imageSrc": "skills/api.png",
+      "class": "express"
+    },
+    {
+      "title": "Django",
+      "imageSrc": "skills/django.png",
+      "class": "django"
+    },
+    {
+      "title": "Python",
+      "imageSrc": "skills/python.png",
+      "class": "python"
+    },
+    {
+      "title": "Java",
+      "imageSrc": "skills/java.png",
+      "class": "java"
+    }
+  ],
+  "database": [
+    {
+      "title": "MongoDB",
+      "imageSrc": "skills/mongodb.png",
+      "class": "mongodb"
+    },
+    {
+      "title": "MySQL",
+      "imageSrc": "skills/mysql.png",
+      "class": "mysql"
+    }
+  ]
+}

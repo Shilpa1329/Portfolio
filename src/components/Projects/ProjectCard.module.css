@@ -1,0 +1,139 @@
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #2b3d63 0%, #132a53 100%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px;
+  max-width: 360px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  height: 400px; /* This remains fixed for the card's height */
+  overflow-y: auto; /* This will make the entire card scrollable */
+  display: flex;
+  flex-direction: column;
+}
+.projectCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #4b6e94, #36537a, #132a53);
+  background-size: 400% 400%;
+  z-index: -1;
+  animation: moveBorder 3s linear infinite; /* Moving effect */
+}
+
+@keyframes moveBorder {
+  0% {
+    background-position: 400% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 400% 0%;
+  }
+}
+.projectCard .image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.projectCard .title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.projectCard .description {
+  font-size: 18px;
+  font-weight: 400;
+  color: #dcdcdc;
+  margin-bottom: 20px;
+}
+
+.skills {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+  list-style: none; /* Removes bullet points */
+  padding: 0; /* Removes any default padding for the list */
+  margin: 0; /* Removes any default margin for the list */
+}
+
+.skills .skill {
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20px;
+  background: #3a4f79;
+  color: #ffffff;
+  padding: 6px 18px;
+}
+
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.links .link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #4b6e94, #36537a);
+  padding: 10px 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.links .link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #4b6e94, #2a5298);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.links .link:hover::after {
+  inset: -4px;
+}
+
+
+/* Customizing the scrollbar inside the card */
+.projectCard::-webkit-scrollbar {
+  width: 8px;
+}
+
+.projectCard::-webkit-scrollbar-track {
+  background: #132a53; /* Dark background for the track */
+}
+
+.projectCard::-webkit-scrollbar-thumb {
+  background-color: #4b6e94; /* Dark color for the scrollbar thumb */
+  border-radius: 10px;
+}
+
+.projectCard::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  
+
+ 
+}

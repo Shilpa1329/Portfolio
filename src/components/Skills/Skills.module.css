@@ -1,0 +1,314 @@
+@import "../../vars.css";
+
+/* General Container */
+.container {
+  color: var(--color-text);
+  margin: 50px 5%;
+  overflow: hidden;
+}
+
+/* Title Styling */
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-left: 110px;
+
+  margin-bottom: 40px;
+}
+
+/* Content Layout */
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Skill Section Styling (Frontend, Backend, Database) */
+.skillSection {
+  flex: 1;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #2c2c54, #1e1e40);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  animation: moveIn 3s ease-in-out infinite, rotateIn 10s linear infinite; /* Continuous sliding and rotating */
+  height:430px;
+}
+
+/* Delays for each container */
+.skillSection:nth-child(1) {
+  animation-delay: 0s; /* Frontend */
+}
+
+.skillSection:nth-child(2) {
+  animation-delay: 5s; /* Backend */
+}
+
+.skillSection:nth-child(3) {
+  animation-delay: 10s; /* Database */
+}
+
+/* Continuous Horizontal Slide Animation */
+@keyframes moveIn {
+  0% {
+    transform: translateX(-50%) rotate(0deg); /* Starts from left */
+  }
+  50% {
+    transform: translateX(50%) rotate(5deg); /* Moves to the right */
+  }
+  100% {
+    transform: translateX(-50%) rotate(0deg); /* Returns to original position */
+  }
+}
+
+/* Continuous Rotation Animation */
+@keyframes rubberband {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.25); /* Stretch out */
+  }
+  50% {
+    transform: scale(0.75); /* Compress */
+  }
+  70% {
+    transform: scale(1.15); /* Stretch out again */
+  }
+  100% {
+    transform: scale(1); /* Return to original size */
+  }
+}
+
+.skillSection {
+  animation: rubberband 5s ease-in-out;
+  display: inline-block;
+}
+
+/* Add delays for each section */
+.skillSection:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.skillSection:nth-child(2) {
+  animation-delay: 3s; /* Delay for backend */
+}
+
+.skillSection:nth-child(3) {
+  animation-delay: 6s; /* Delay for database */
+}
+
+
+/* Section Title */
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-highlight);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 2px solid var(--color-highlight);
+  padding-bottom: 10px;
+}
+
+/* Skills Grid */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Individual Skill Card */
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: var(--color-secondary);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100px;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Skill Image Container */
+/* General Skill Image Container Styling */
+.skillImageContainer {
+  border: 3px solid var(--color-text); /* Default border */
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Skill Hover Effect with Color Glow */
+.skill:hover .skillImageContainer {
+  box-shadow: 0 0 15px 4px currentColor; /* Glow effect using currentColor */
+}
+
+/* Frontend Skills */
+.html .skillImageContainer {
+  border-color: #FF7F00; /* Orange for HTML */
+}
+
+.html .skill:hover .skillImageContainer {
+  box-shadow: 0 0 15px 4px #FF7F00; /* Orange glow */
+}
+
+/* CSS Skill */
+.css .skillImageContainer {
+  border-color: #0077B5; /* Blue for CSS */
+}
+
+.css .skill:hover .skillImageContainer {
+  box-shadow: 0 0 15px 4px #0077B5; /* Blue glow */
+}
+
+/* JavaScript Skill */
+.js .skillImageContainer {
+  border-color: #F7DF1E; /* Yellow for JavaScript */
+}
+
+.js .skill:hover .skillImageContainer {
+  box-shadow: 0 0 15px 4px #F7DF1E; /* Yellow glow */
+}
+
+/* React Skill */
+.react .skillImageContainer {
+  border-color: #61DAFB; /* Blue for React */
+}
+
+.react .skill:hover .skillImageContainer {
+  box-shadow: 0 0 15px 4px #61DAFB; /* Blue glow */
+}
+
+/* Tailwind CSS Skill */
+.tailwind .skillImageContainer {
+  border-color: #38B2AC; /* Teal for Tailwind */
+}
+
+.tailwind .skill:hover .skillImageContainer {
+  box-shadow: 0 0 15px 4px #38B2AC; /* Teal glow */
+}
+
+/* Backend Skills */
+.nodejs .skillImageContainer {
+  border-color: #339933; /* Green for Node.js */
+}
+
+.nodejs .skill:hover .skillImageContainer {
+  box-shadow: 0 0 15px 4px #339933; /* Green glow */
+}
+
+/* Django Skill */
+.django .skillImageContainer {
+  border-color: #092E20; /* Dark Green for Django */
+}
+
+.django .skill:hover .skillImageContainer {
+  box-shadow: 0 0 15px 4px #092E20; /* Dark Green glow */
+}
+
+/* Python Skill */
+.python .skillImageContainer {
+  border-color: #306998; /* Blue for Python */
+}
+
+.python .skill:hover .skillImageContainer {
+  box-shadow: 0 0 15px 4px #306998; /* Blue glow */
+}
+
+/* MySQL Skill */
+.mysql .skillImageContainer {
+  border-color: #4479A1; /* Blue for MySQL */
+}
+
+.mysql .skill:hover .skillImageContainer {
+  box-shadow: 0 0 15px 4px #4479A1; /* Blue glow */
+}
+
+/* MongoDB Skill */
+.mongodb .skillImageContainer {
+  border-color: #47A248; /* Green for MongoDB */
+}
+
+.mongodb .skill:hover .skillImageContainer {
+  box-shadow: 0 0 15px 4px #47A248; /* Green glow */
+}
+
+/* Database Skills */
+.express .skillImageContainer {
+  border-color: #FFB81C; /* Yellow for Database */
+}
+
+.express .skill:hover .skillImageContainer {
+  box-shadow: 0 0 15px 4px #FFB81C; /* Yellow glow */
+}
+.java .skillImageContainer {
+  border-color: #f7b04d; /* Yellow for Database */
+}
+
+.java .skill:hover .skillImageContainer {
+  box-shadow: 0 0 15px 4px #f0b057; /* Yellow glow */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .skillSection {
+    width: 100%;
+  }
+}
+
+
+.skillImageContainer img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+
+
+/* Skill Title */
+.skill p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--color-text);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .skillSection {
+    width: 100%;
+  }
+}
