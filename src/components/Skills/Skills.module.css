@@ -277,7 +277,10 @@
     align-items: center;
     gap: 20px;
   }
-
+  .title {
+    margin-left: 0;
+    text-align: center;
+  }
   .skillSection {
     width: 100%;
   }
@@ -307,7 +310,9 @@
     align-items: center;
     gap: 20px;
   }
-
+  .title{
+    text-align: center;
+  }
   .skillSection {
     width: 100%;
   }

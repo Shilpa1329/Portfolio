@@ -11,7 +11,7 @@
   letter-spacing: 1.75px;
   text-transform: uppercase;
   color: var(--color-primary);
-  margin-left: 18px;
+  margin-left: 18px; /* Left margin for larger screens */
   margin-bottom: 50px;
 }
 
@@ -28,7 +28,7 @@
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left; /* Default left alignment for larger screens */
   text-transform: uppercase;
 }
 
@@ -49,7 +49,6 @@
   }
 }
 
-
 .projectCard {
   display: flex;
   flex-direction: column;
@@ -58,12 +57,12 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   padding: 20px 30px;
   max-width: 360px;
-  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for box-shadow and transform */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .projectCard:hover {
-  box-shadow: 0 0 20px 5px rgba(61, 130, 186, 0.7); /* Subtle blue glow */
-  transform: translateY(-5px); /* Slight upward shift on hover */
+  box-shadow: 0 0 20px 5px rgba(61, 130, 186, 0.7);
+  transform: translateY(-5px);
 }
 
 .projectCard .image {
@@ -127,4 +126,16 @@
   background: linear-gradient(135deg, #36537a, #4b6e94);
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 830px) {
+  .title {
+    margin-left: 0; /* Remove left margin on small screens */
+    text-align: center; /* Center the title on small screens */
+  }
+
+  .projectHeading {
+    text-align: center; /* Center the project heading on small screens */
+  }
 }

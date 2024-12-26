@@ -73,7 +73,10 @@
     padding-left: 0;
     padding-right: 0;
   }
-
+ 
+  .title{
+    text-align: center;
+  }
   .content {
     flex-direction: column;
   }
